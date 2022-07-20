@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F0DB33628886EEE006E3083 /* reflex_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DB33528886EEE006E3083 /* reflex_iOSApp.swift */; };
+		8F0DB33828886EEE006E3083 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DB33728886EEE006E3083 /* ContentView.swift */; };
+		8F0DB33A28886EEF006E3083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F0DB33928886EEF006E3083 /* Assets.xcassets */; };
+		8F0DB33D28886EEF006E3083 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F0DB33C28886EEF006E3083 /* Preview Assets.xcassets */; };
+		8F0DB34728886EEF006E3083 /* reflex_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DB34628886EEF006E3083 /* reflex_iOSTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F0DB34328886EEF006E3083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F0DB32A28886EEE006E3083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F0DB33128886EEE006E3083;
+			remoteInfo = "reflex iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F0DB33228886EEE006E3083 /* reflex iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "reflex iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0DB33528886EEE006E3083 /* reflex_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reflex_iOSApp.swift; sourceTree = "<group>"; };
+		8F0DB33728886EEE006E3083 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8F0DB33928886EEF006E3083 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F0DB33C28886EEF006E3083 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8F0DB34228886EEF006E3083 /* reflex iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "reflex iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0DB34628886EEF006E3083 /* reflex_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reflex_iOSTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F0DB32F28886EEE006E3083 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F0DB33F28886EEF006E3083 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F0DB32928886EEE006E3083 = {
+			isa = PBXGroup;
+			children = (
+				8F0DB33428886EEE006E3083 /* reflex iOS */,
+				8F0DB34528886EEF006E3083 /* reflex iOSTests */,
+				8F0DB33328886EEE006E3083 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F0DB33328886EEE006E3083 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F0DB33228886EEE006E3083 /* reflex iOS.app */,
+				8F0DB34228886EEF006E3083 /* reflex iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F0DB33428886EEE006E3083 /* reflex iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8F0DB35F28886F1A006E3083 /* Applications */,
+				8F0DB36128886F6A006E3083 /* Epics */,
+			);
+			path = "reflex iOS";
+			sourceTree = "<group>";
+		};
+		8F0DB33B28886EEF006E3083 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8F0DB33C28886EEF006E3083 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8F0DB34528886EEF006E3083 /* reflex iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F0DB34628886EEF006E3083 /* reflex_iOSTests.swift */,
+			);
+			path = "reflex iOSTests";
+			sourceTree = "<group>";
+		};
+		8F0DB35F28886F1A006E3083 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				8F0DB33528886EEE006E3083 /* reflex_iOSApp.swift */,
+				8F0DB36028886F52006E3083 /* Assets */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		8F0DB36028886F52006E3083 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8F0DB33928886EEF006E3083 /* Assets.xcassets */,
+				8F0DB33B28886EEF006E3083 /* Preview Content */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8F0DB36128886F6A006E3083 /* Epics */ = {
+			isa = PBXGroup;
+			children = (
+				8F0DB33728886EEE006E3083 /* ContentView.swift */,
+			);
+			path = Epics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F0DB33128886EEE006E3083 /* reflex iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F0DB35628886EEF006E3083 /* Build configuration list for PBXNativeTarget "reflex iOS" */;
+			buildPhases = (
+				8F0DB32E28886EEE006E3083 /* Sources */,
+				8F0DB32F28886EEE006E3083 /* Frameworks */,
+				8F0DB33028886EEE006E3083 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "reflex iOS";
+			productName = "reflex iOS";
+			productReference = 8F0DB33228886EEE006E3083 /* reflex iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F0DB34128886EEF006E3083 /* reflex iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F0DB35928886EEF006E3083 /* Build configuration list for PBXNativeTarget "reflex iOSTests" */;
+			buildPhases = (
+				8F0DB33E28886EEF006E3083 /* Sources */,
+				8F0DB33F28886EEF006E3083 /* Frameworks */,
+				8F0DB34028886EEF006E3083 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F0DB34428886EEF006E3083 /* PBXTargetDependency */,
+			);
+			name = "reflex iOSTests";
+			productName = "reflex iOSTests";
+			productReference = 8F0DB34228886EEF006E3083 /* reflex iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F0DB32A28886EEE006E3083 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					8F0DB33128886EEE006E3083 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					8F0DB34128886EEF006E3083 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 8F0DB33128886EEE006E3083;
+					};
+				};
+			};
+			buildConfigurationList = 8F0DB32D28886EEE006E3083 /* Build configuration list for PBXProject "reflex iOS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F0DB32928886EEE006E3083;
+			productRefGroup = 8F0DB33328886EEE006E3083 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F0DB33128886EEE006E3083 /* reflex iOS */,
+				8F0DB34128886EEF006E3083 /* reflex iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F0DB33028886EEE006E3083 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F0DB33D28886EEF006E3083 /* Preview Assets.xcassets in Resources */,
+				8F0DB33A28886EEF006E3083 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F0DB34028886EEF006E3083 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F0DB32E28886EEE006E3083 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F0DB33828886EEE006E3083 /* ContentView.swift in Sources */,
+				8F0DB33628886EEE006E3083 /* reflex_iOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F0DB33E28886EEF006E3083 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F0DB34728886EEF006E3083 /* reflex_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F0DB34428886EEF006E3083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F0DB33128886EEE006E3083 /* reflex iOS */;
+			targetProxy = 8F0DB34328886EEF006E3083 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8F0DB35428886EEF006E3083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F0DB35528886EEF006E3083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F0DB35728886EEF006E3083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"reflex iOS/Applications/Assets/Preview Content\"";
+				DEVELOPMENT_TEAM = V89TG33T3A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.training.reflex-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F0DB35828886EEF006E3083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"reflex iOS/Applications/Assets/Preview Content\"";
+				DEVELOPMENT_TEAM = V89TG33T3A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.training.reflex-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8F0DB35A28886EEF006E3083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V89TG33T3A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.training.reflex-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reflex iOS.app/reflex iOS";
+			};
+			name = Debug;
+		};
+		8F0DB35B28886EEF006E3083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V89TG33T3A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.training.reflex-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reflex iOS.app/reflex iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F0DB32D28886EEE006E3083 /* Build configuration list for PBXProject "reflex iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F0DB35428886EEF006E3083 /* Debug */,
+				8F0DB35528886EEF006E3083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F0DB35628886EEF006E3083 /* Build configuration list for PBXNativeTarget "reflex iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F0DB35728886EEF006E3083 /* Debug */,
+				8F0DB35828886EEF006E3083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F0DB35928886EEF006E3083 /* Build configuration list for PBXNativeTarget "reflex iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F0DB35A28886EEF006E3083 /* Debug */,
+				8F0DB35B28886EEF006E3083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F0DB32A28886EEE006E3083 /* Project object */;
+}

@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct HomeView: View {
-
-    @ObservedObject var viewModel: HomeViewModel = HomeViewModel()
+    @EnvironmentObject var appState: AppState
+    @EnvironmentObject var interactor: HomeViewInteractor
 
     var body: some View {
-        Text(viewModel.getBeautifulTimer())
+        VStack {
+            Text(String(appState.intervalTimerState.intervalTimerData.trainingTime))
+            Button("Change timer") {
+                interactor.changeTimer()
+            }
+            NavigationLink("Second view") {
+                EditTimeView()
+            }
+        }
     }
 }
 

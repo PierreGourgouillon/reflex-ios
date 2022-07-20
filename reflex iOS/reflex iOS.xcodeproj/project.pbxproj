@@ -12,7 +12,9 @@
 		8F0DB33D28886EEF006E3083 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F0DB33C28886EEF006E3083 /* Preview Assets.xcassets */; };
 		8F0DB364288872D9006E3083 /* IntervalTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DB363288872D9006E3083 /* IntervalTimer.swift */; };
 		8F0DB366288873BD006E3083 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DB365288873BD006E3083 /* HomeView.swift */; };
-		8F0DB36C28887534006E3083 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DB36B28887534006E3083 /* HomeViewModel.swift */; };
+		8F0DB36F2888961F006E3083 /* EditTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DB36E2888961F006E3083 /* EditTimeView.swift */; };
+		8F0DB3722888A6FB006E3083 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DB3712888A6FB006E3083 /* AppState.swift */; };
+		8F0DB3742888A7B5006E3083 /* HomeViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DB3732888A7B5006E3083 /* HomeViewInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +35,9 @@
 		8F0DB34228886EEF006E3083 /* reflex iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "reflex iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0DB363288872D9006E3083 /* IntervalTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTimer.swift; sourceTree = "<group>"; };
 		8F0DB365288873BD006E3083 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		8F0DB36B28887534006E3083 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8F0DB36E2888961F006E3083 /* EditTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTimeView.swift; sourceTree = "<group>"; };
+		8F0DB3712888A6FB006E3083 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		8F0DB3732888A7B5006E3083 /* HomeViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				8F0DB33428886EEE006E3083 /* reflex iOS */,
-				8F0DB34528886EEF006E3083 /* reflex iOSTests */,
 				8F0DB33328886EEE006E3083 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +78,7 @@
 		8F0DB33428886EEE006E3083 /* reflex iOS */ = {
 			isa = PBXGroup;
 			children = (
+				8F0DB3702888A6F0006E3083 /* State */,
 				8F0DB362288872C3006E3083 /* Models */,
 				8F0DB35F28886F1A006E3083 /* Applications */,
 				8F0DB36128886F6A006E3083 /* Epics */,
@@ -88,13 +92,6 @@
 				8F0DB33C28886EEF006E3083 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		8F0DB34528886EEF006E3083 /* reflex iOSTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "reflex iOSTests";
 			sourceTree = "<group>";
 		};
 		8F0DB35F28886F1A006E3083 /* Applications */ = {
@@ -119,7 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				8F0DB365288873BD006E3083 /* HomeView.swift */,
-				8F0DB36B28887534006E3083 /* HomeViewModel.swift */,
+				8F0DB3732888A7B5006E3083 /* HomeViewInteractor.swift */,
+				8F0DB36D28889602006E3083 /* Edit */,
 			);
 			path = Epics;
 			sourceTree = "<group>";
@@ -130,6 +128,22 @@
 				8F0DB363288872D9006E3083 /* IntervalTimer.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8F0DB36D28889602006E3083 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				8F0DB36E2888961F006E3083 /* EditTimeView.swift */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		8F0DB3702888A6F0006E3083 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				8F0DB3712888A6FB006E3083 /* AppState.swift */,
+			);
+			path = State;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,10 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F0DB3742888A7B5006E3083 /* HomeViewInteractor.swift in Sources */,
 				8F0DB366288873BD006E3083 /* HomeView.swift in Sources */,
 				8F0DB33628886EEE006E3083 /* ReflexApp.swift in Sources */,
+				8F0DB36F2888961F006E3083 /* EditTimeView.swift in Sources */,
+				8F0DB3722888A6FB006E3083 /* AppState.swift in Sources */,
 				8F0DB364288872D9006E3083 /* IntervalTimer.swift in Sources */,
-				8F0DB36C28887534006E3083 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

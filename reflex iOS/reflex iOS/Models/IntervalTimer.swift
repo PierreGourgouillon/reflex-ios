@@ -8,9 +8,9 @@
 import Foundation
 
 struct IntervalTimer {
-    let trainingTime: Float
-    let pause: Float
-    let exercices: Float
-    let rounds: Float
-    let timerResetRound: Float
+    var trainingTime: Float
+    var pause: Float
+    var exercices: Float
+    var rounds: Float
+    var timerResetRound: Float
 }

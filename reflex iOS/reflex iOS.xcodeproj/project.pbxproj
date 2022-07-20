@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F0DB33628886EEE006E3083 /* reflex_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DB33528886EEE006E3083 /* reflex_iOSApp.swift */; };
-		8F0DB33828886EEE006E3083 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DB33728886EEE006E3083 /* ContentView.swift */; };
+		8F0DB33628886EEE006E3083 /* ReflexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DB33528886EEE006E3083 /* ReflexApp.swift */; };
 		8F0DB33A28886EEF006E3083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F0DB33928886EEF006E3083 /* Assets.xcassets */; };
 		8F0DB33D28886EEF006E3083 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F0DB33C28886EEF006E3083 /* Preview Assets.xcassets */; };
-		8F0DB34728886EEF006E3083 /* reflex_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DB34628886EEF006E3083 /* reflex_iOSTests.swift */; };
+		8F0DB364288872D9006E3083 /* IntervalTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DB363288872D9006E3083 /* IntervalTimer.swift */; };
+		8F0DB366288873BD006E3083 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DB365288873BD006E3083 /* HomeView.swift */; };
+		8F0DB36C28887534006E3083 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DB36B28887534006E3083 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,12 +27,13 @@
 
 /* Begin PBXFileReference section */
 		8F0DB33228886EEE006E3083 /* reflex iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "reflex iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F0DB33528886EEE006E3083 /* reflex_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reflex_iOSApp.swift; sourceTree = "<group>"; };
-		8F0DB33728886EEE006E3083 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8F0DB33528886EEE006E3083 /* ReflexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflexApp.swift; sourceTree = "<group>"; };
 		8F0DB33928886EEF006E3083 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F0DB33C28886EEF006E3083 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8F0DB34228886EEF006E3083 /* reflex iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "reflex iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F0DB34628886EEF006E3083 /* reflex_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reflex_iOSTests.swift; sourceTree = "<group>"; };
+		8F0DB363288872D9006E3083 /* IntervalTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTimer.swift; sourceTree = "<group>"; };
+		8F0DB365288873BD006E3083 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8F0DB36B28887534006E3083 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		8F0DB33428886EEE006E3083 /* reflex iOS */ = {
 			isa = PBXGroup;
 			children = (
+				8F0DB362288872C3006E3083 /* Models */,
 				8F0DB35F28886F1A006E3083 /* Applications */,
 				8F0DB36128886F6A006E3083 /* Epics */,
 			);
@@ -90,7 +93,6 @@
 		8F0DB34528886EEF006E3083 /* reflex iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				8F0DB34628886EEF006E3083 /* reflex_iOSTests.swift */,
 			);
 			path = "reflex iOSTests";
 			sourceTree = "<group>";
@@ -98,7 +100,7 @@
 		8F0DB35F28886F1A006E3083 /* Applications */ = {
 			isa = PBXGroup;
 			children = (
-				8F0DB33528886EEE006E3083 /* reflex_iOSApp.swift */,
+				8F0DB33528886EEE006E3083 /* ReflexApp.swift */,
 				8F0DB36028886F52006E3083 /* Assets */,
 			);
 			path = Applications;
@@ -116,9 +118,18 @@
 		8F0DB36128886F6A006E3083 /* Epics */ = {
 			isa = PBXGroup;
 			children = (
-				8F0DB33728886EEE006E3083 /* ContentView.swift */,
+				8F0DB365288873BD006E3083 /* HomeView.swift */,
+				8F0DB36B28887534006E3083 /* HomeViewModel.swift */,
 			);
 			path = Epics;
+			sourceTree = "<group>";
+		};
+		8F0DB362288872C3006E3083 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F0DB363288872D9006E3083 /* IntervalTimer.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,12 +142,15 @@
 				8F0DB32E28886EEE006E3083 /* Sources */,
 				8F0DB32F28886EEE006E3083 /* Frameworks */,
 				8F0DB33028886EEE006E3083 /* Resources */,
+				8F0DB36A288874AD006E3083 /* Swiftlint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "reflex iOS";
+			packageProductDependencies = (
+			);
 			productName = "reflex iOS";
 			productReference = 8F0DB33228886EEE006E3083 /* reflex iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -187,6 +201,8 @@
 				Base,
 			);
 			mainGroup = 8F0DB32928886EEE006E3083;
+			packageReferences = (
+			);
 			productRefGroup = 8F0DB33328886EEE006E3083 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -216,13 +232,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8F0DB36A288874AD006E3083 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8F0DB32E28886EEE006E3083 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F0DB33828886EEE006E3083 /* ContentView.swift in Sources */,
-				8F0DB33628886EEE006E3083 /* reflex_iOSApp.swift in Sources */,
+				8F0DB366288873BD006E3083 /* HomeView.swift in Sources */,
+				8F0DB33628886EEE006E3083 /* ReflexApp.swift in Sources */,
+				8F0DB364288872D9006E3083 /* IntervalTimer.swift in Sources */,
+				8F0DB36C28887534006E3083 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F0DB34728886EEF006E3083 /* reflex_iOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

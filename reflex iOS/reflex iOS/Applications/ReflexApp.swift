@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct reflex_iOSApp: App {
+struct ReflexApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

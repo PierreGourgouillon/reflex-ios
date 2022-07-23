@@ -9,14 +9,14 @@ import SwiftUI
 
 @main
 struct ReflexApp: App {
-    var appState = AppState()
+    @StateObject var appState = AppState()
+
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                HomeView()
+                HomeView(appState: appState)
+                    .environmentObject(appState)
             }
-            .environmentObject(appState)
-            .environmentObject(HomeViewInteractor(appState: appState))
         }
     }
 }

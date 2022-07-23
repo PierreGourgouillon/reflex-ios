@@ -9,10 +9,6 @@ import Foundation
 import SwiftUI
 
 class AppState: ObservableObject {
-    var intervalTimerState = IntervalTimerState()
-}
-
-class IntervalTimerState: ObservableObject {
     @Published var intervalTimerData: IntervalTimer = IntervalTimer(
         trainingTime: 30,
         pause: 10,

@@ -9,14 +9,29 @@ import SwiftUI
 
 struct EditTimeView: View {
     @EnvironmentObject var appState: AppState
+    @State private var isEditing = false
+
+    @Binding var value: Float
+    let title: String
+    let range: ClosedRange<Float>
+    let step: Int
 
     var body: some View {
-        Text(String(appState.intervalTimerState.intervalTimerData.trainingTime))
+        VStack {
+            Text(appState.intervalTimerData.getBeautifulTimer())
+            Slider(value: $value,
+                   in: range,
+                   step: Float.Stride(step)) { editing in
+                isEditing = editing
+            }
+        }
     }
 }
 
 struct EditTimeView_Previews: PreviewProvider {
     static var previews: some View {
-        EditTimeView()
+        let appState = AppState()
+        EditTimeView(value: .constant(50), title: "Hello", range: 0...100, step: 1)
+            .environmentObject(appState)
     }
 }

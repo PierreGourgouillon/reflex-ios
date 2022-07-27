@@ -26,7 +26,8 @@ struct CellView: View {
                 .font(.system(size: 22, weight: .semibold))
                 .foregroundColor(color)
         }
-        .padding(20)
+        .frame(height: 70)
+        .padding(.horizontal, 20)
         .background(color.opacity(0.2))
         .cornerRadius(8)
     }

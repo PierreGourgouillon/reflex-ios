@@ -14,12 +14,25 @@ extension View {
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: alignment)
     }
 
-    func setNavBar(title: String, image: Image? = nil, titleColor: Color) -> some View {
-        self
+    func setNavBar(title: String, systemNameImage: String? = nil,
+                   titleColor: Color, backgroundColor: Color) -> some View {
+        let coloredAppearance = UINavigationBarAppearance()
+        coloredAppearance.configureWithOpaqueBackground()
+        coloredAppearance.backgroundColor = UIColor(backgroundColor)
+        coloredAppearance.shadowColor = .clear
+        UINavigationBar.appearance().standardAppearance = coloredAppearance
+        UINavigationBar.appearance().compactAppearance = coloredAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
+
+        return self
         .toolbar {
             ToolbarItem(placement: .principal) {
                 HStack {
-                    image
+                    if let systemNameImage = systemNameImage {
+                        Image(systemName: systemNameImage)
+                            .foregroundColor(.white)
+                            .font(.system(size: 17, weight: .semibold))
+                    }
                     Text(title)
                         .font(.headline)
                         .foregroundColor(titleColor)
